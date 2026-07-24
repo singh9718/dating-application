@@ -1,13 +1,37 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const floatingShapes = [
-  { size: 320, top: '-5%', left: '-8%', color: 'from-pink-200/40 to-rose-200/30', delay: 0 },
-  { size: 250, top: '60%', right: '-5%', color: 'from-lavender-200/40 to-pink-200/30', delay: 0.3 },
-  { size: 180, top: '30%', left: '40%', color: 'from-rose-100/50 to-pink-100/40', delay: 0.6 },
-  { size: 140, bottom: '10%', left: '20%', color: 'from-lavender-100/50 to-pink-100/40', delay: 0.9 },
+  {
+    size: 320,
+    top: "-5%",
+    left: "-8%",
+    color: "from-pink-200/40 to-rose-200/30",
+    delay: 0,
+  },
+  {
+    size: 250,
+    top: "60%",
+    right: "-5%",
+    color: "from-lavender-200/40 to-pink-200/30",
+    delay: 0.3,
+  },
+  {
+    size: 180,
+    top: "30%",
+    left: "40%",
+    color: "from-rose-100/50 to-pink-100/40",
+    delay: 0.6,
+  },
+  {
+    size: 140,
+    bottom: "10%",
+    left: "20%",
+    color: "from-lavender-100/50 to-pink-100/40",
+    delay: 0.9,
+  },
 ];
 
 export default function Hero() {
@@ -19,7 +43,7 @@ export default function Hero() {
           key={i}
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.2, delay: s.delay, ease: 'easeOut' }}
+          transition={{ duration: 1.2, delay: s.delay, ease: "easeOut" }}
           className={`absolute rounded-full bg-gradient-to-br ${s.color} blur-3xl pointer-events-none`}
           style={{
             width: s.size,
@@ -50,7 +74,7 @@ export default function Hero() {
           className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6 leading-tight"
         >
           <span className="bg-gradient-to-r from-pink-600 via-rose-500 to-pink-400 bg-clip-text text-transparent">
-            Our Next Date
+            Our Date
           </span>
           <span className="ml-3">❤️</span>
         </motion.h1>
@@ -85,7 +109,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-16 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-gray-400 text-sm"
         >
-          {['Romantic', 'Thoughtful', 'Personal'].map((tag) => (
+          {["Romantic", "Thoughtful", "Personal"].map((tag) => (
             <span key={tag} className="flex items-center gap-1.5">
               <span className="size-1.5 rounded-full bg-pink-300 inline-block" />
               {tag}
