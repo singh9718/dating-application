@@ -10,7 +10,7 @@ export default function ThankYouPage() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-1 flex items-center justify-center px-4 pt-20 pb-16">
-        <div className="text-center max-w-lg mx-auto">
+        <div className="relative text-center max-w-lg mx-auto">
           {/* Animated heart */}
           <motion.div
             initial={{ scale: 0, opacity: 0 }}

@@ -68,10 +68,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
+          className="w-full sm:w-auto flex justify-center"
         >
           <Link
             href="/preferences"
-            className="inline-flex items-center gap-2 px-10 py-4 rounded-2xl bg-gradient-to-r from-pink-500 to-rose-500 text-white text-lg font-semibold shadow-xl shadow-pink-200 hover:shadow-2xl hover:shadow-pink-300 hover:-translate-y-1 active:translate-y-0 transition-all duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 rounded-2xl bg-gradient-to-r from-pink-500 to-rose-500 text-white text-lg font-semibold shadow-xl shadow-pink-200 hover:shadow-2xl hover:shadow-pink-300 hover:-translate-y-1 active:translate-y-0 transition-all duration-200"
           >
             <span>Let&apos;s Plan Our Date</span>
             <span className="text-xl">→</span>
@@ -82,7 +83,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="mt-16 flex items-center justify-center gap-8 text-gray-400 text-sm"
+          className="mt-16 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-gray-400 text-sm"
         >
           {['Romantic', 'Thoughtful', 'Personal'].map((tag) => (
             <span key={tag} className="flex items-center gap-1.5">

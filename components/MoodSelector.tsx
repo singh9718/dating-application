@@ -19,7 +19,7 @@ interface MoodSelectorProps {
 export default function MoodSelector({ value, onChange, error }: MoodSelectorProps) {
   return (
     <div className="space-y-2">
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+      <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
         {MOODS.map((m) => {
           const selected = value === m.value;
           return (
